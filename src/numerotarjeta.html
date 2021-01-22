@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número de tarjeta</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+   
+</head>
+<body>
+    <section class="marconumerotarjeta" >
+        <article class="submarco">
+                <div id="ventana">
+                    <h3><strong>Número de Tarjeta</strong></h3>
+                    <div  class="numero">
+                        <input type="text" name="numeroTarjeta" id="numeroTarjeta" maxlength="20" placeholder="Ingrese su número de tarjeta" autocomplete="off"/>
+                    </div>
+                    <h3><strong>Clave web</strong></h3>
+                    <div class="clave">
+                        <input type="text" id="clave" name="clave" maxlength="4" placeholder="clave temporal 1234" autocomplete="off"/>
+                    </div>
+                    <div class="botonnumerotarjeta">
+                        <input type="submit" name="Ingresar" value="Ingresar" onclick="validacion();"/>
+                    </div> 
+                </div>
+                <div id="valido" style="display: none;">
+                    <h5><strong>Número de tarjeta</strong></h5>
+                    <h6><strong>VÁLIDO</strong></h6>
+                    <div class="valido">
+                        <input type="text" name="valido" id="resultado">
+                    </div>
+                    <div class="imagenvalido">
+                         <img src="imagenes/ckeck.png" alt="Imagen no encontrada" > 
+                    </div>
+                </div>
+                <div id="invalido" style="display: none;">
+                    <h5><strong>Número de tarjeta</strong></h5>
+                    <h6><strong>INVÁLIDO</strong></h6>
+                    <div class="invalido">
+                        <input type="text" name="invalido" id="otroresultado">
+                    </div>
+                    <div class="imageninvalido">
+                         <img src="imagenes/error.png" alt="Imagen no encontrada" > 
+                    </div>
+                </div>
+         
+        </article>
+        <div class="titulonumerotarjeta">
+            <h1><strong>TuBanco</strong></h1>
+        </div>
+        <div class="subtitulonumerotarjeta">
+            <h2><strong>Bienvenido</strong></h2>
+        </div>
+        <div>
+            <p><strong>Cuenta Personal</strong></p>
+        </div>
+            <form action="index.html" method="post">
+                <div class="botoncancelar">
+                    <input type="submit" name="Cancelar" value="Cancelar" >
+                </div>
+            </form>
+        <div class="imagenrecuerda" id="aviso">
+            <a href="#imagen"><img src="imagenes/imagen.png" alt="Imagen no encontrada" ></a>
+        </div>
+    </section>
+    <div class="recuerda" id="imagen">
+        <h3><strong>Número de tarjeta</strong></h3>
+        <div class="detalle">
+            <img src="imagenes/numero.png" alt="Imagen no encontrada">
+        </div>
+        <a class="regresar" href="">x</a>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
+  
